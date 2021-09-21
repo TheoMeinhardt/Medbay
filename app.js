@@ -10,6 +10,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(router);
+app.use(express.static(path.join(__dirname, 'public', 'css', '/')));
+app.use(express.static(path.join(__dirname, 'public', 'images', '/')));
+app.use(express.static(path.join(__dirname, 'public', 'js', '/')));
 
 app.listen(port, () => {
   console.log('server listening on port ' + port);
