@@ -8,12 +8,12 @@
 
 ## IDE-config
 
-`npm i --inlcude=dev`
-` npm run dev`
-`cd src`
-`tsc -p ./tsconfig.data.json`
-`cd src`
-`tsc -p ./tsconfig.public.json`
+1. `npm i --inlcude=dev`
+2. ` npm run dev`
+3. `cd src`
+4. `tsc -p ./tsconfig.data.json`
+5. `cd src`
+6. `tsc -p ./tsconfig.public.json`
 
 extension live-sass-compiler installieren
 watch sass
