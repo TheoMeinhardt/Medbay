@@ -20,7 +20,8 @@
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/node": "^16.9.4",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "watchify": "^4.0.0"
   },
   "dependencies": {
     "axios": "^0.21.4",

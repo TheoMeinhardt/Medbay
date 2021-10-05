@@ -20,6 +20,8 @@
 4. `tsc -p ./tsconfig.data.json`
 5. `cd src`
 6. `tsc -p ./tsconfig.public.json`
+7. `cd public/js`
+8. `watchify script.js -o bundle.js`
 
 extension live-sass-compiler installieren und den `watch sass` - button clicken
 
