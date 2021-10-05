@@ -2081,12 +2081,16 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const axios_1 = __importDefault(require("axios"));
 async function getData() {
-    const restResponse = await axios_1.default({
+    const config = {
         method: 'get',
-        url: 'localhost:3000/query',
+        url: 'http://127.1.0.0:3000/query',
         responseType: 'json',
-    });
-    console.log(typeof restResponse);
+    };
+    const restResponse = await axios_1.default(config);
+    return restResponse;
 }
+(async () => {
+    console.log(await getData());
+})();
 
 },{"axios":2}]},{},[31]);
