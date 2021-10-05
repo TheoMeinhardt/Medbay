@@ -15,8 +15,7 @@
 5. `cd src`
 6. `tsc -p ./tsconfig.public.json`
 
-extension live-sass-compiler installieren
-watch sass
+extension live-sass-compiler installieren und den `watch sass` - button clicken
 
 ## Styles
 
