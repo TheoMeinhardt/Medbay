@@ -4,6 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "build:js": "cd src && tsc -p ./tsconfig.data.json --watch false && tsc -p ./tsconfig.public.json --watch false",
+    "build:bundlejs": "cd public/js && browserify script.js > bundle.js",
+    "build:css": "cd src/scss && sass style.scss ../../public/css/style.min.css --style=compressed",
+    "build": "npm run build:js && npm run build:bundlejs && npm run build:css",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
@@ -25,9 +29,11 @@
   },
   "dependencies": {
     "axios": "^0.21.4",
+    "browserify": "^17.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "sass": "^1.42.1"
   },
   "prettier": {
     "printWidth": 500,
