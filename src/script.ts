@@ -1,9 +1,11 @@
 import axios, { AxiosPromise, AxiosRequestConfig, AxiosResponse } from 'axios';
 
-async function getData(): Promise<AxiosPromise<any>> {
+async function getData(searchField: string, searchTerm: string, limit: number, count?: number): Promise<AxiosPromise<any>> {
+  let partialUrl: string = `search=${searchField}:"${searchTerm}"&limit=${limit}`;
+
   const config: AxiosRequestConfig = {
     method: 'get',
-    url: 'http://127.1.0.0:3000/query',
+    url: 'https://localhost:8080/query/' + partialUrl,
     responseType: 'json',
   };
 
@@ -13,5 +15,5 @@ async function getData(): Promise<AxiosPromise<any>> {
 }
 
 (async () => {
-  console.log(await getData());
+  console.log(await getData('patient.reaction.reactionmeddrapt', 'fatigue', 2));
 })();
