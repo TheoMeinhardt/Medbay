@@ -30,7 +30,7 @@ extension live-sass-compiler installieren und den `watch sass` - button clicken
 
 ### Colors
 
-https://coolors.co/000814-001d3d-003566-ffc300-ffd60a
+https://coolors.co/8ecae6-219ebc-126782-023047-ffb703-fd9e02-fb8500
 
 ### Fonts
 
