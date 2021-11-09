@@ -6,5 +6,7 @@
       "savePath": "/client/css/"
     }
   ],
-  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"]
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 500
 }
