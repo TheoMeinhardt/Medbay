@@ -1,8 +1,0 @@
-{
-    "extends": "../tsconfig.json",
-    "include": ["data.ts"],
-    "compilerOptions": {
-        "rootDir": "./",
-        "outDir": "../data"
-    }
-}

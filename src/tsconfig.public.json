@@ -1,8 +1,0 @@
-{
-    "extends": "../tsconfig.json",
-    "include": ["script.ts"],
-    "compilerOptions": {
-        "rootDir": "./",
-        "outDir": "../public/js"
-    }
-}
