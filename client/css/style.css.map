@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/style.scss",
+        "../src/_vars.scss",
+        "../src/_navbar.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
