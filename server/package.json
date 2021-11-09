@@ -1,0 +1,19 @@
+{
+  "name": "medbay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheoMeinhardt/Medbay.git"
+  },
+  "author": "Theo Meinhardt, Kristof Matura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheoMeinhardt/Medbay/issues"
+  },
+  "homepage": "https://github.com/TheoMeinhardt/Medbay#readme"
+}
