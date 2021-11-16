@@ -1,5 +1,8 @@
-const express = require('express');
-const data = require('./data/data.js');
+// const express = require('express');
+// const data = require('./data/data.js');
+
+import express from 'express';
+import data from './data/data.mjs';
 
 const router = express.Router();
 const apiKey = data.apiKey;
@@ -13,4 +16,4 @@ router.get('*', (req, res) => {
   res.status(404).send('404 - not found');
 });
 
-module.exports = router;
+export default router;

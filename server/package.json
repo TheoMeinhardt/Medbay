@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
@@ -23,8 +24,6 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "@types/axios": "^0.14.0",
-    "@types/node": "^16.11.7",
     "nodemon": "^2.0.14"
   }
 }
