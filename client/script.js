@@ -10,14 +10,17 @@ async function getData(searchField, searchTerm, limit, count) {
   };
   const restResponse = await axios(config);
 
-  return restResponse;
+  return restResponse.data.results;
 }
 
 const myApp = {
   data() {
     return {
-      data: getData('patient.reaction.reactionmeddrapt', 'fatigue', 1),
+      medData: {},
     };
+  },
+  async created() {
+    this.medData = await getData('patient.reaction.reactionmeddrapt', 'fatigue', 1);
   },
 };
 
