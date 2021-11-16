@@ -16,8 +16,6 @@
 
 1. `npm i --inlcude=dev`
 2. ` npm run dev`
-3. `cd server/src/`
-4. `tsc --watch`
 
 extension live-sass-compiler installieren und den `watch sass` - button clicken
 
