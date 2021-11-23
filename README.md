@@ -34,5 +34,4 @@ https://fonts.google.com/specimen/Montserrat
 
 Fields:
 
-1. Established pharmacologic class associated with an approved indication of an active moiety (generic drug) that the FDA has determined to be scientifically valid and clinically meaningful.
-   `openfda.pharm_class_cs`
+1. Established pharmacologic class associated with an approved indication of an active moiety (generic drug) that the FDA has determined to be scientifically valid and clinically meaningful.<br />Field-name: `openfda.pharm_class_cs`
