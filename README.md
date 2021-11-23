@@ -6,6 +6,7 @@
   - [Styles](#styles)
     - [Colors](#colors)
     - [Fonts](#fonts)
+  - [Dataguide](#dataguide)
 
 ## start Express-Server
 
@@ -28,3 +29,10 @@ https://coolors.co/000814-001d3d-003566-ffc300-ffd60a
 ### Fonts
 
 https://fonts.google.com/specimen/Montserrat
+
+## Dataguide
+
+Fields:
+
+1. Established pharmacologic class associated with an approved indication of an active moiety (generic drug) that the FDA has determined to be scientifically valid and clinically meaningful.
+   `openfda.pharm_class_cs`
