@@ -26,7 +26,7 @@ const myApp = {
 createApp(myApp).mount('#app');
 
 (async () => {
-  console.log(standardQuery('patient.reaction.reactionmeddrapt', 'headache', 10));
-  // console.log(countQuery('patient.drug.openfda.pharm_class_moa'));
-  // console.log(standardQuery('patient.drug.openfda.pharm_class_epc', 'laxatives', 5));
+  console.log(standardQuery('patient.reaction.reactionmeddrapt', 'HEADACHE', 10));
+  // console.log(countQuery('patient.reaction.reactionmeddrapt'));
+  console.log(standardQuery('patient.drug', 'ASPIRIN', 5));
 })();
