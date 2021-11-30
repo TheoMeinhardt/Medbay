@@ -1,6 +1,5 @@
 import axios from 'axios';
-
-const apiKey = '0KywVsIRkpTgbCe3f403oH4EnyF5GqGC3F24kBFo';
+import fs from 'fs';
 
 async function callApi(apikey, params) {
   let url = `https://api.fda.gov/drug/event.json?api_key=${apikey}&${params}`;
@@ -12,6 +11,4 @@ async function callApi(apikey, params) {
   });
 }
 
-const data = { apiKey, callApi };
-
-export default data;
+export default { callApi };

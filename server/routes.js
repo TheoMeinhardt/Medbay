@@ -1,19 +1,20 @@
-// const express = require('express');
-// const data = require('./data/data.js');
-
 import express from 'express';
-import data from './data/data.mjs';
+import dotenv from 'dotenv';
+import data from './data/data.js';
+
+dotenv.config();
 
 const router = express.Router();
-const apiKey = data.apiKey;
+const apiKey = process.env.API_KEY;
 
-router.get('/query/*', async (req, res) => {
-  let dataRes = await data.callApi(apiKey, req.url.slice(7));
+router.get('/standardquery?*', async (req, res) => {
+  let dataRes = await data.callApi(apiKey, req.url.slice(15));
   res.json(dataRes.data);
 });
 
-router.get('*', (req, res) => {
-  res.status(404).send('404 - not found');
+router.get('/countquery?*', async (req, res) => {
+  let dataRes = await data.callApi(apiKey, req.url.slice(12));
+  res.status(200).json(dataRes.data);
 });
 
 export default router;
